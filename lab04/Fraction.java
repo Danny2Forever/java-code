@@ -27,4 +27,17 @@ public class Fraction {
             btmN *= f.btmN;
         }
     }
+    public boolean myEquals(Fraction x){
+        return ((topN==x.topN) && (btmN==x.btmN));
+    }
+    
+    public static int gcd(int a, int b) {
+        return b == 0 ? a : gcd(b, a % b);
+    }
+    
+    public void LowestTermFrac(){
+        int gcd = gcd(topN, btmN);
+        topN /= gcd;
+        btmN /= gcd;
+    }
 }
