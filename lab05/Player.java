@@ -16,10 +16,10 @@ public class Player {
     public String getName(){
         return name;
     }
-    public void setTeam(String n){
-        team = n;
+    public void setTeam(String t){
+        team = t;
     }
-    public String getTeam(String n){
+    public String getTeam(){
         return team;
     }
     public boolean isSameTeam(Player p){
